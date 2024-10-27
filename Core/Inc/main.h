@@ -57,6 +57,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LTDC_BUFF_ADDR 0xC0000000
+#define PIXELS_W 1024
+#define PIXELS_H 600
+#define PIXELS_DIR 0
+#define LED0_Pin GPIO_PIN_1
+#define LED0_GPIO_Port GPIOB
+#define LCD_BK_Pin GPIO_PIN_5
+#define LCD_BK_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

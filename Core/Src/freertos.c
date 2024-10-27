@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "fmc.h"
+#include "ltdc.h"
 #include "stdio.h"
 /* USER CODE END Includes */
 
@@ -87,6 +88,7 @@ void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackTy
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
 	SDRAM_Device_Init();
+
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -153,18 +155,28 @@ void StartTask02(void const * argument)
 {
   /* USER CODE BEGIN StartTask02 */
   /* Infinite loop */
-
+		osDelay(10);
+	LTDC_Init();
+	LTDC_Clear(YELLOW);
+#if 0 //conflict with SDRAM_Test
 	int retval;
 	retval = SDRAM_Test();	
 	if(retval != SUCCESS)
 		printf("SDRAM test error\r\n");
 	else
 		printf("SDRAM test OK!!!!\r\n");
-	
+#endif
   for(;;)
   {
-		printf("StartTask02\r\n");
-    osDelay(1000);
+		HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
+		
+		LTDC_Clear(YELLOW);
+		osDelay(500);
+		LTDC_Clear(BLUE);
+		osDelay(500);
+		LTDC_Clear(RED);
+		
+		osDelay(500);
   }
   /* USER CODE END StartTask02 */
 }
@@ -182,7 +194,6 @@ void StartTask03(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		printf("StartTask03\r\n");
     osDelay(1000);
   }
   /* USER CODE END StartTask03 */
