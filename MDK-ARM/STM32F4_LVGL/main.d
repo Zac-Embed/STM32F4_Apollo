@@ -26,6 +26,8 @@ stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
 stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sdram.h
+stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmc.h
 stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 stm32f4_lvgl\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
@@ -46,6 +48,5 @@ stm32f4_lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 stm32f4_lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 stm32f4_lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 stm32f4_lvgl\main.o: ../Core/Inc/usart.h
-stm32f4_lvgl\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-stm32f4_lvgl\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 stm32f4_lvgl\main.o: ../Core/Inc/gpio.h
+stm32f4_lvgl\main.o: ../Core/Inc/fmc.h

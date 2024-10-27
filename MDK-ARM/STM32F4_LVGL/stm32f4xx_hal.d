@@ -25,6 +25,8 @@ stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_
 stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sdram.h
+stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmc.h
 stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 stm32f4_lvgl\stm32f4xx_hal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h

@@ -21,6 +21,9 @@
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
+#include "stdio.h"
+#include "string.h"
+
 #define RXBUFFERSIZE  256     
 char RxBuffer[RXBUFFERSIZE];   
 uint8_t aRxBuffer;			
